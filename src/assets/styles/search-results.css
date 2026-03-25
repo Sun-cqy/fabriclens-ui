@@ -1,0 +1,158 @@
+/* 搜索结果页面通用样式 */
+
+/* 按钮样式 */
+.right-menu .ant-btn {
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.right-menu .ant-btn-primary {
+    border-color: #1890ff;
+}
+
+.right-menu .ant-btn-dangerous {
+    background: transparent;
+    border: 1px solid #ff4d4f;
+}
+
+.right-menu .user-btn {
+    background-color: transparent;
+    border: 1px solid #1890ff;
+    color: #1890ff;
+}
+
+.right-menu .ant-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* 动画效果 */
+.logo {
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* 卡片悬浮效果 */
+.fabric-card,
+.card-wrapper {
+    transform-origin: center bottom;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-wrapper:hover {
+    z-index: 2;
+}
+
+/* 搜索结果页登录模态框 */
+.login-footer {
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* 标签云样式 */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.tag-cloud .ant-tag {
+    margin-right: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tag-cloud .ant-tag:hover {
+    transform: scale(1.05);
+}
+
+/* 过滤器动画 */
+.filter-section .ant-tag {
+    transition: all 0.2s ease;
+}
+
+.filter-section .ant-tag:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 结果项目动画 */
+.list-item-card,
+.fabric-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.list-item-card:hover {
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* 自定义滚动条 */
+.filter-sidebar::-webkit-scrollbar,
+.results-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.filter-sidebar::-webkit-scrollbar-track,
+.results-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.filter-sidebar::-webkit-scrollbar-thumb,
+.results-content::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.filter-sidebar::-webkit-scrollbar-thumb:hover,
+.results-content::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 加载动画增强 */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.progress-stage.active .stage-number {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* 移动端优化 */
+@media (max-width: 576px) {
+    .header-content {
+        padding: 0 16px;
+    }
+
+    .main-content {
+        padding: 16px;
+    }
+
+    .results-header {
+        padding: 16px;
+    }
+
+    .filter-card {
+        padding: 16px;
+    }
+
+    .original-image img {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="300" height="200" fill="#e6f7ff"/>
+  
+  <!-- 织物纹理 - 交织线 -->
+  <pattern id="fabric-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 0,10 L 20,10 M 10,0 L 10,20" stroke="#91d5ff" stroke-width="1"/>
+    <path d="M 5,0 L 5,20 M 15,0 L 15,20 M 0,5 L 20,5 M 0,15 L 20,15" stroke="#91d5ff" stroke-width="0.5"/>
+  </pattern>
+  
+  <rect x="0" y="0" width="300" height="200" fill="url(#fabric-pattern)"/>
+  
+  <!-- 点缀装饰 -->
+  <circle cx="75" cy="50" r="15" fill="#1890ff" opacity="0.3"/>
+  <circle cx="225" cy="150" r="20" fill="#1890ff" opacity="0.3"/>
+  <circle cx="150" cy="100" r="25" fill="#1890ff" opacity="0.3"/>
+  
+  <!-- 标题 -->
+  <text x="150" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1890ff" text-anchor="middle">蓝色棉麻混纺</text>
+</svg> 

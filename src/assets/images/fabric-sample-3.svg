@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="300" height="200" fill="#f6ffed"/>
+  
+  <!-- 织物纹理 - 斜纹 -->
+  <pattern id="fabric-pattern" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect x="0" y="0" width="5" height="10" fill="#d9f7be"/>
+    <rect x="5" y="0" width="5" height="10" fill="#f6ffed"/>
+  </pattern>
+  
+  <rect x="0" y="0" width="300" height="200" fill="url(#fabric-pattern)"/>
+  
+  <!-- 装饰叶子图案 -->
+  <g transform="translate(75, 50)">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="#52c41a" opacity="0.5" transform="rotate(30)"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#52c41a" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(225, 150)">
+    <ellipse cx="0" cy="0" rx="15" ry="10" fill="#52c41a" opacity="0.5" transform="rotate(45)"/>
+    <line x1="-10" y1="0" x2="10" y2="0" stroke="#52c41a" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(150, 100)">
+    <ellipse cx="0" cy="0" rx="20" ry="12" fill="#52c41a" opacity="0.5" transform="rotate(15)"/>
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="#52c41a" stroke-width="1"/>
+  </g>
+  
+  <!-- 标题 -->
+  <text x="150" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#52c41a" text-anchor="middle">绿色亚麻斜纹</text>
+</svg> 

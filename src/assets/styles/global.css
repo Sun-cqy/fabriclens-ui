@@ -1,0 +1,113 @@
+/* 全局样式文件 */
+@import './variables.css';
+
+/* 基础样式 */
+:root {
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* 链接样式 */
+a {
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-duration);
+}
+
+a:hover {
+    color: #40a9ff;
+    /* 主题色较亮版本 */
+}
+
+/* 标题样式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color-primary);
+    margin-bottom: var(--spacing-base);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: var(--font-size-xlarge);
+}
+
+h2 {
+    font-size: var(--font-size-large);
+}
+
+/* 布局容器 */
+.container {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-base);
+}
+
+/* 卡片样式 */
+.card {
+    background-color: #fff;
+    border-radius: var(--border-radius-base);
+    box-shadow: var(--box-shadow-light);
+    padding: var(--card-padding);
+    margin-bottom: var(--spacing-large);
+}
+
+/* 按钮样式调整 */
+.ant-btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+/* 卡片样式调整 */
+.ant-card {
+    border-radius: var(--border-radius-base);
+    overflow: hidden;
+}
+
+/* 标签样式调整 */
+.ant-tag {
+    margin-right: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-small);
+    }
+
+    .card {
+        padding: var(--spacing-base);
+    }
+}
